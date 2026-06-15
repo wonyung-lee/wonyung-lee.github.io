@@ -2,15 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Graph Network Medicine Lab # the website title (shown in the navbar)
+title: Computational Network Medicine Lab # the website title (shown in the navbar)
 first_name: Won-Yung
 middle_name:
 last_name: Lee
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Graph Network Medicine Lab (그래프 네트워크 의학 연구실) · 원광대학교 한의과대학. Graph-based machine learning, network pharmacology, and LLMs for elucidating drug mechanisms and Korean medicine.
+  Computational Network Medicine Lab · 원광대학교 한의과대학. Graph-based machine learning, network pharmacology, and LLMs for elucidating drug mechanisms and Korean medicine.
 footer_text: >
-  Graph Network Medicine Lab · 원광대학교 한의과대학<br>
+  Computational Network Medicine Lab · 원광대학교 한의과대학<br>
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: network pharmacology, graph machine learning, GNN, knowledge graph, herb-drug interaction, Korean medicine, traditional medicine, LLM, drug mechanism
 lang: ko # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -83,7 +83,7 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true

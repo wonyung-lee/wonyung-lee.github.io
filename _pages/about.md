@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: Graph Network Medicine Lab · 원광대학교 한의과대학 — Graph ML · Network pharmacology · LLMs
+subtitle: Computational Network Medicine Lab · 원광대학교 한의과대학 — Graph ML · Network pharmacology · LLMs
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -18,7 +18,7 @@ latest_posts:
   limit: 3
 ---
 
-**그래프 네트워크 의학 연구실 (Graph Network Medicine Lab)** 에 오신 것을 환영합니다.
+**Computational Network Medicine Lab** 에 오신 것을 환영합니다.
 
 우리 연구실은 그래프 기반 머신러닝과 네트워크 약리학, 대규모 언어모델(LLM)을 활용해 **약물·한약의 작용 기전 규명과 한의학 연구**의 새로운 접근법을 탐구합니다.
 

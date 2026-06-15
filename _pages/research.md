@@ -2,32 +2,61 @@
 layout: page
 title: research
 permalink: /research/
-description: 연구 분야 — 그래프 기반 머신러닝과 네트워크 약리학으로 약물 작용 기전 규명과 한의학을 연구합니다.
+description: 연구 분야 — 네트워크 약리학, 그래프 기반 머신러닝, 한의학 기반 AI/LLM 응용
 nav: true
 nav_order: 2
 ---
 
-우리 연구실은 **그래프(graph)와 네트워크**라는 공통의 언어로 약물·표적·질환·한약을 연결하고, 이를 머신러닝과 LLM으로 분석합니다. 주요 연구 테마는 다음 네 가지입니다.
+<style>
+  .rgrid { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0 0.5rem; align-items: flex-start; }
+  .rgrid .cell { flex: 1 1 300px; min-width: 280px; }
+  .rgrid .cell img { width: 100%; height: auto; border: 1px solid #eee; border-radius: 6px; }
+  .rgrid .cell p { font-size: 0.92em; margin-top: 0.5rem; }
+</style>
 
-### 1. 네트워크 약리학 (Network pharmacology)
+우리 연구실은 **그래프(graph)와 네트워크**라는 공통의 언어로 약물·표적·질환·한약을 연결하고, 이를 머신러닝과 LLM으로 분석합니다.
 
-약물–표적–경로–질환의 다층 네트워크를 구축하여 한약·천연물의 **다중 표적 작용 기전(multi-target mechanism)** 을 규명합니다. 단일 성분–단일 표적 패러다임을 넘어, 처방 수준에서의 시너지와 작용점을 시스템 관점에서 해석합니다.
+### 네트워크 약리학 (Network pharmacology)
 
-### 2. 그래프 기반 머신러닝 (Graph ML / GNN / 지식그래프)
+약물–표적–경로–질환의 다층 네트워크를 구축하여 한약·천연물의 **다중 표적 작용 기전(multi-target mechanism)** 을 규명합니다.
 
-생의학 **지식그래프(knowledge graph)** 와 **그래프 신경망(GNN)** 을 활용해 약물 반응, 표적 예측, 작용 기전 추론 등의 문제를 풉니다. 이질적(heterogeneous) 그래프 표현 학습과 설명 가능한 예측에 중점을 둡니다.
+<div class="rgrid">
+  <div class="cell">
+    <img src="{{ '/assets/img/research/netpharm.png' | relative_url }}" alt="네트워크 약리학 현황평가">
+    <p><strong>네트워크 약리학 현황평가 (JARE, 2025)</strong>: 네트워크 약리학 연구의 현황을 체계적으로 평가하고, 기전·치료효과 규명을 위한 분석 기준을 제시함.</p>
+  </div>
+  <div class="cell">
+    <img src="{{ '/assets/img/research/br.png' | relative_url }}" alt="융합적 접근 기반 한약 효능평가">
+    <p><strong>융합적 접근 기반 한약 효능평가 (FRBM, 2023)</strong>: 네트워크 약리학과 in vitro·in vivo 실험을 융합해 한약의 항산화 효능과 핵심 활성성분을 규명함.</p>
+  </div>
+</div>
 
-### 3. 약물–한약 상호작용 (Herb–drug interaction) 예측
+### 그래프 기반 머신러닝 (Graph ML / GNN / 지식그래프)
 
-한약과 양약을 함께 사용할 때 발생할 수 있는 **상호작용을 데이터 기반으로 예측**합니다. 약동학·약력학 정보와 그래프 모델을 결합하여 임상적으로 유의한 상호작용을 사전에 선별하는 것을 목표로 합니다.
+생의학 **지식그래프(knowledge graph)** 와 **그래프 신경망(GNN)** 을 활용해 약물 반응·표적·상호작용 예측과 설명 가능한 추론 문제를 풉니다.
 
-### 4. 한의학·전통의학을 위한 AI/LLM 응용
+<div class="rgrid">
+  <div class="cell">
+    <img src="{{ '/assets/img/research/hdi.png' | relative_url }}" alt="한약-합성의약품 상호작용 예측">
+    <p><strong>한약–합성의약품 상호작용 예측 (Phytomedicine, 2026)</strong>: 그래프 신경망과 전이학습(Meta-HDI)으로 한약–합성의약품 상호작용을 예측하고 임상·실험으로 검증함.</p>
+  </div>
+  <div class="cell">
+    <img src="{{ '/assets/img/research/ml.png' | relative_url }}" alt="사상의학기반 해석가능 AI 개발">
+    <p><strong>사상의학기반 해석가능 AI 개발 (Biomolecules, 2022)</strong>: 사상체질·임상 정보 기반 머신러닝 모델을 개발하고, 설명가능 AI(LIME)로 예측 근거를 제시함.</p>
+  </div>
+</div>
 
-전통의학 문헌과 처방 데이터를 **대규모 언어모델(LLM)** 로 구조화하고, 한의학 지식의 표준화·검색·추론을 지원하는 도구를 개발합니다. 전통의학 지식과 현대 약리학을 잇는 가교 역할을 지향합니다.
+### 한의학 기반 응용 (LLM · 생성형 AI)
 
----
+**대규모 언어모델(LLM)** 과 생성형 AI를 한의학 교육·지식 활용에 응용하는 도구를 개발합니다.
 
-### 진행 중 연구과제 (Funding)
-
-- 지식그래프 기반 다면적 접근을 활용한 알츠하이머 최적 한약조합 발굴 및 검증 — 지역혁신선도연구센터/지역과학우수자연구 (**연구책임자**)
-- AI-바이오 융합 한약–합성의약품 상호작용 연구실 — 기초연구실(BRL), 공동연구진
+<div class="rgrid">
+  <div class="cell">
+    <img src="{{ '/assets/img/research/gensyndi.png' | relative_url }}" alt="생성형 AI 기반 한의학 교육">
+    <p><strong>생성형 AI 기반 한의학 교육 (Appl. Sci., 2025)</strong>: 지식 유도 생성형 AI로 변증과 질병 진단을 함께 학습하는 교육 도구(Gen-SynDi)를 개발함.</p>
+  </div>
+  <div class="cell">
+    <img src="{{ '/assets/img/research/tam.png' | relative_url }}" alt="도구 보강 LLM 에이전트 벤치마크">
+    <p><strong>도구 보강 LLM 에이전트 벤치마크 (Appl. Sci., 2026)</strong>: 전통의학 메타데이터로 도구 보강(tool-augmented) LLM 에이전트의 성능을 벤치마크 평가함.</p>
+  </div>
+</div>
