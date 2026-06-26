@@ -43,3 +43,5 @@ nav_order: 4
 
 **2026** — 김주형 · 염준상 · 송지호 · 안선영 · 이하정
 </div>
+
+{% include hero_network.liquid %}

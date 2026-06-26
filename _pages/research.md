@@ -60,3 +60,5 @@ nav_order: 2
     <p><strong>도구 보강 LLM 에이전트 벤치마크 (Appl. Sci., 2026)</strong>: 전통의학 메타데이터로 도구 보강(tool-augmented) LLM 에이전트의 성능을 벤치마크 평가함.</p>
   </div>
 </div>
+
+{% include hero_network.liquid %}

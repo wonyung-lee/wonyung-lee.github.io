@@ -7,3 +7,5 @@ nav_order: 5
 ---
 
 {% include news.liquid %}
+
+{% include hero_network.liquid %}

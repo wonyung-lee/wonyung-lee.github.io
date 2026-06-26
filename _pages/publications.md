@@ -18,3 +18,21 @@ nav_order: 3
 {% bibliography %}
 
 </div>
+
+{% include hero_network.liquid %}
+
+<!-- Hide "(IF x.x)" on the full publications list only (kept on the home selected list). -->
+<script>
+  (function () {
+    function stripIF() {
+      document.querySelectorAll(".publications em").forEach(function (el) {
+        el.textContent = el.textContent.replace(/\s*\(IF[^)]*\)/g, "");
+      });
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", stripIF);
+    } else {
+      stripIF();
+    }
+  })();
+</script>

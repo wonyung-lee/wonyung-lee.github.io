@@ -32,3 +32,5 @@ latest_posts:
 - **한의학·전통의학을 위한 AI/LLM 응용**
 
 자세한 내용은 [연구 분야]({{ '/research/' | relative_url }}) 페이지를, 발표 논문은 [Publications]({{ '/publications/' | relative_url }}) 페이지를 참고해 주세요.
+
+{% include hero_network.liquid %}
