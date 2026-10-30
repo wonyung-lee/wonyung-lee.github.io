@@ -28,7 +28,6 @@ nav_order: 4
   @media (hover: hover) { .swap:hover .fun { opacity: 1; } }
 
   .people-role { margin-top: 2.2rem; }
-  .people-sub { margin-top: 1.4rem; font-size: 1.15rem; }
   .roster p { margin: 0.35rem 0; }
   .tba { color: #888; }
 </style>
@@ -98,29 +97,6 @@ nav_order: 4
 
 **2026** — 김주형 · 염준상 · 송지호 · 안선영 · 이하정
 </div>
-
-## Administrative Staff
-{: .people-role}
-
-<div class="tba">TBA</div>
-
-## Alumni
-{: .people-role}
-
-### Ph.D.
-{: .people-sub}
-
-<div class="tba">TBA</div>
-
-### M.S.
-{: .people-sub}
-
-<div class="tba">TBA</div>
-
-### Undergraduate
-{: .people-sub}
-
-<div class="tba">TBA</div>
 
 {% include hero_network.liquid %}
 
