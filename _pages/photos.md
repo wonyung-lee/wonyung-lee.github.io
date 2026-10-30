@@ -12,21 +12,23 @@ nav_order: 6
   .event { margin: 0 -1rem; padding: 1.4rem 1rem 1.6rem; border-radius: 8px; }
   .event:nth-of-type(odd) { background: rgba(127, 127, 127, 0.07); }
   .event h4 { margin: 0 0 0.9rem; font-size: 1.05rem; }
-  .event .photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
-  .event .photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; display: block; }
-  .event .photos .placeholder { aspect-ratio: 4 / 3; border: 1px dashed rgba(127, 127, 127, 0.45); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9em; }
+  /* 사진은 높이를 맞추고 가로·세로 비율은 그대로 (잘림 없음) */
+  .event .photos { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .event .photos img { height: 300px; width: auto; max-width: 100%; border-radius: 6px; display: block; }
+  .event .photos .placeholder { flex: 1 1 260px; aspect-ratio: 4 / 3; border: 1px dashed rgba(127, 127, 127, 0.45); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9em; }
+  @media (max-width: 600px) { .event .photos img { height: auto; width: 100%; } }
 </style>
 
 {% comment %}
   ── 행사 템플릿 (최신 행사를 위에) ──────────────────────────────────
   사진은 assets/img/photos/<연도>/ 에 올리고, 아래 블록을 해당 연도 아래 맨 위에 복사하세요.
-  사진을 클릭하면 원본 크기로 열립니다.
+  사진은 높이 300px로 맞춰서 나란히 보입니다 (가로·세로 사진 섞여도 잘리지 않음).
 
   <div class="event">
     <h4>행사 이름 (0월)</h4>
     <div class="photos">
-      <a href="{{ '/assets/img/photos/2026/FILE-1.jpg' | relative_url }}" target="_blank"><img src="{{ '/assets/img/photos/2026/FILE-1.jpg' | relative_url }}" alt="행사 이름 사진 1" loading="lazy"></a>
-      <a href="{{ '/assets/img/photos/2026/FILE-2.jpg' | relative_url }}" target="_blank"><img src="{{ '/assets/img/photos/2026/FILE-2.jpg' | relative_url }}" alt="행사 이름 사진 2" loading="lazy"></a>
+      <img src="{{ '/assets/img/photos/2026/FILE-1.webp' | relative_url }}" alt="행사 이름 사진 1" loading="lazy">
+      <img src="{{ '/assets/img/photos/2026/FILE-2.webp' | relative_url }}" alt="행사 이름 사진 2" loading="lazy">
     </div>
   </div>
   ────────────────────────────────────────────────────────────────────
@@ -46,8 +48,8 @@ nav_order: 6
 <div class="event">
   <h4>인삼학회 (10월)</h4>
   <div class="photos">
-    <div class="placeholder">사진 준비 중</div>
-    <div class="placeholder">사진 준비 중</div>
+    <img src="{{ '/assets/img/photos/2026/ginseng-1.webp' | relative_url }}" alt="인삼학회 사진 1" loading="lazy">
+    <img src="{{ '/assets/img/photos/2026/ginseng-2.webp' | relative_url }}" alt="인삼학회 사진 2" loading="lazy">
   </div>
 </div>
 
